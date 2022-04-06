@@ -232,8 +232,6 @@ void draw() {
     
 		// Health UI
     for(int i=0;i<=x+playerHealth;i++){
-      if(x+playerHealth>=4)x=4-playerHealth;
-      if(x+playerHealth==1 && key=='a')x=0;
       image(heart,10+i*70,10,50,51);
       
     }
@@ -284,11 +282,11 @@ void keyPressed(){
       break;
 
       case 'a':
-      if(playerHealth > 0) playerHealth --;
+      if(playerHealth > -2) playerHealth --;
       break;
 
       case 'd':
-      if(playerHealth < 5) playerHealth ++;
+      if(playerHealth < 3) playerHealth ++;
       break;
     }
       if(key==CODED){
