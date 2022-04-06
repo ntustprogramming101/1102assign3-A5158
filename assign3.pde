@@ -231,7 +231,7 @@ void draw() {
     if(groundhogY>=height-80)groundhogY=height-80;
     
 		// Health UI
-    for(int i=0;i<=x+playerHealth;i++){
+    for(int i=0;i<=1+playerHealth;i++){
       image(heart,10+i*70,10,50,51);
       
     }
