@@ -282,7 +282,7 @@ void keyPressed(){
       break;
 
       case 'a':
-      if(playerHealth > -2) playerHealth --;
+      if(playerHealth > -1) playerHealth --;
       break;
 
       case 'd':
